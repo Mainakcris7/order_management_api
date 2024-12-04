@@ -1,0 +1,14 @@
+[OrderController.getAllOrders()] - execution time : 18 ms TIMESTAMP 2024-12-03T11:45:09.235822300
+[CustomerController.getAllCustomers()] - execution time : 7 ms TIMESTAMP 2024-12-03T11:45:21.309110500
+[OrderController.getOrderById(..)] - execution time : 5 ms TIMESTAMP 2024-12-03T11:45:46.396248500
+[OrderController.getOrderById(..)] - execution time : 7 ms TIMESTAMP 2024-12-03T11:46:02.379916400
+[CustomerController.getCustomerByEmail(..)] - execution time : 112 ms TIMESTAMP 2024-12-03T11:49:01.418178500
+[CustomerController.getCustomerByEmail(..)] - execution time : 6 ms TIMESTAMP 2024-12-03T11:49:05.644142
+[CustomerController.getCustomerByEmail(..)] - execution time : 6 ms TIMESTAMP 2024-12-03T11:49:08.763231500
+[OrderController.getOrdersByPrice(..)] - execution time : 9 ms TIMESTAMP 2024-12-03T11:50:16.893618500
+[CustomerController.getAllCustomers()] - execution time : 479 ms TIMESTAMP 2024-12-03T18:12:54.091496800
+[OrderController.getAllOrders()] - execution time : 27 ms TIMESTAMP 2024-12-03T18:27:00.654965100
+[CustomerController.updateCustomer(..)] - execution time : 178 ms TIMESTAMP 2024-12-03T18:30:25.522080
+[OrderController.getAllOrders()] - execution time : 460 ms TIMESTAMP 2024-12-04T09:56:52.746241
+[IndexController.indexRoute()] - execution time : 0 ms TIMESTAMP 2024-12-04T10:00:09.599841500
+[OrderController.getOrderById(..)] - execution time : 16 ms TIMESTAMP 2024-12-04T10:00:52.588247400
