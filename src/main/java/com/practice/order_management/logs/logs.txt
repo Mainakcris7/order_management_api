@@ -12,3 +12,5 @@
 [OrderController.getAllOrders()] - execution time : 460 ms TIMESTAMP 2024-12-04T09:56:52.746241
 [IndexController.indexRoute()] - execution time : 0 ms TIMESTAMP 2024-12-04T10:00:09.599841500
 [OrderController.getOrderById(..)] - execution time : 16 ms TIMESTAMP 2024-12-04T10:00:52.588247400
+[IndexController.indexRoute()] - execution time : 4 ms TIMESTAMP 2024-12-04T10:41:46.282511900
+[CustomerController.getAllCustomers()] - execution time : 323 ms TIMESTAMP 2024-12-04T10:41:50.327845300
