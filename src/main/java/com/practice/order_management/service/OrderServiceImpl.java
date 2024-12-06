@@ -125,7 +125,6 @@ public class OrderServiceImpl implements OrderService {
     public ResponseEntity<Order> saveOrder(Order order) {
         order.setId(0); // To ensure JPA treats it as a new object
         order.setOrderedAt(LocalDateTime.now()); // Setting the current time stamp
-        order.setCustomer(order.getCustomer()); // Associating the customer details with the order
         Order savedOrder = repo.saveOrder(order);
         if (savedOrder == null) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
