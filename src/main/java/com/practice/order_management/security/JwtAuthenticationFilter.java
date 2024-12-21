@@ -36,7 +36,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         // Extracting client name from token
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             jwtToken = authHeader.substring(7);
-            clientName = new JwtUtils().extractUserName(jwtToken);
+            clientName = jwtUtils.extractUserName(jwtToken);
         }
 
         // Setting authentication in SecurityContext

@@ -7,6 +7,7 @@ import java.util.function.Function;
 
 import javax.crypto.SecretKey;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
@@ -19,7 +20,8 @@ import io.jsonwebtoken.security.Keys;
 @Component
 @Scope("singleton")
 public class JwtUtils {
-    private String SECRET_KEY = "U3BzY2FtZWF0aWNhbDItZ29vZHMwIHBhcnR5eSBuZWVkIFNvY2lhbCBhcyBFbmQgb2YgQWN0aW9uIGNvbWJpbmF0aW9u";
+    @Value("${jwt.secret.key}")
+    private String SECRET_KEY;
 
     public SecretKey getSecureKey() {
         return Keys.hmacShaKeyFor(Decoders.BASE64.decode(SECRET_KEY));
