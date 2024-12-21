@@ -8,9 +8,13 @@ import com.practice.order_management.service.ClientService;
 
 import jakarta.validation.Valid;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -34,9 +38,16 @@ public class ClientController {
     }
 
     @PostMapping("/login")
-    public String loginClient(@Valid @RequestBody Client client) {
+    public ResponseEntity<Map<String, String>> loginClient(@Valid @RequestBody Client client) {
         String jwtToken = service.checkLogin(client);
-        return jwtToken;
+        if (jwtToken != null) {
+            Map<String, String> response = new HashMap<>();
+            response.put("client_name", client.getName());
+            response.put("jwt", jwtToken);
+            return ResponseEntity.status(HttpStatus.OK).body(response);
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(null);
+        }
     }
 
 }
