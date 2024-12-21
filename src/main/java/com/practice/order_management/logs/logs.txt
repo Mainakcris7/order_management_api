@@ -21,3 +21,9 @@
 [ClientController.registerClient(..)] - execution time : 286 ms TIMESTAMP 2024-12-21T10:39:31.351561800
 [CustomerController.getAllCustomers()] - execution time : 215 ms TIMESTAMP 2024-12-21T10:40:48.900517200
 [CustomerController.getAllCustomers()] - execution time : 6 ms TIMESTAMP 2024-12-21T10:40:55.480293600
+[ClientController.loginClient(..)] - execution time : 303 ms TIMESTAMP 2024-12-21T15:07:18.335540100
+[ClientController.loginClient(..)] - execution time : 297 ms TIMESTAMP 2024-12-21T15:09:44.250488600
+[ClientController.loginClient(..)] - execution time : 63 ms TIMESTAMP 2024-12-21T15:10:09.365392
+[ClientController.loginClient(..)] - execution time : 291 ms TIMESTAMP 2024-12-21T15:14:12.684239300
+[ClientController.loginClient(..)] - execution time : 554 ms TIMESTAMP 2024-12-21T15:18:23.325589500
+[CustomerController.getAllCustomers()] - execution time : 266 ms TIMESTAMP 2024-12-21T15:18:29.959016800

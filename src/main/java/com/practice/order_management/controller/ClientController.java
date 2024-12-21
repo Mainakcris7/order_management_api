@@ -33,4 +33,10 @@ public class ClientController {
         return service.registerClient(client);
     }
 
+    @PostMapping("/login")
+    public String loginClient(@Valid @RequestBody Client client) {
+        String jwtToken = service.checkLogin(client);
+        return jwtToken;
+    }
+
 }
