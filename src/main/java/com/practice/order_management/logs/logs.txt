@@ -18,3 +18,6 @@
 [CustomerController.getAllCustomers()] - execution time : 349 ms TIMESTAMP 2024-12-06T11:51:46.524910200
 [CustomerController.updateCustomer(..)] - execution time : 53 ms TIMESTAMP 2024-12-06T11:52:39.453416300
 [CustomerController.getAllCustomers()] - execution time : 6 ms TIMESTAMP 2024-12-06T11:52:44.408157700
+[ClientController.registerClient(..)] - execution time : 286 ms TIMESTAMP 2024-12-21T10:39:31.351561800
+[CustomerController.getAllCustomers()] - execution time : 215 ms TIMESTAMP 2024-12-21T10:40:48.900517200
+[CustomerController.getAllCustomers()] - execution time : 6 ms TIMESTAMP 2024-12-21T10:40:55.480293600

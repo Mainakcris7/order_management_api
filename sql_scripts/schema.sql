@@ -17,8 +17,16 @@ CREATE TABLE orders(
     CONSTRAINT order_customer_fk FOREIGN KEY(customer_id) REFERENCES customers(id) ON DELETE SET NULL
 );
 
+CREATE TABLE clients(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(200) NOT NULL,
+    password CHAR(60) NOT NULL
+);
+
 SELECT * FROM customers;
 SELECT * FROM orders;
+SELECT * FROM clients;
 
 -- DROP TABLE orders;
 -- DROP TABLE customers;
+-- DROP TABLE clients;
