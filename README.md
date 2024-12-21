@@ -3,7 +3,7 @@
 
 ## Overview
 
-The **Order Management API** is a mini-project built using **Spring Boot**. It demonstrates an effective implementation of RESTful APIs for managing customers and their orders. The project includes key features such as logging with **Aspect-Oriented Programming (AOP)**, unit testing using **Mockito, MockMvc, and JUnit**, and interactive API documentation with **Swagger UI**.
+The **Order Management API** is a mini-project built using **Spring Boot**. It demonstrates an effective implementation of RESTful APIs for managing customers and their orders. The project includes key features such as logging with **Aspect-Oriented Programming (AOP)**, unit testing using **Mockito, MockMvc, and JUnit**, interactive API documentation with **Swagger UI**, and JWT based authentication using **Spring Security**.
 
 
 ![logo](https://media.licdn.com/dms/image/v2/D4D12AQFscCu_T0xB3A/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1688794846091?e=2147483647&v=beta&t=UAzceqpsA588kvnVbHm01O35qL8lnK6eYus5DTDKR8M)
